@@ -1,0 +1,6 @@
+{
+    "name": "kutty",
+    "extends": "",
+    "asset-path": "kutty",
+    "views-path": "kutty"
+}

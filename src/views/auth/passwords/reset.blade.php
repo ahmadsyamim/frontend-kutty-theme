@@ -1,0 +1,1 @@
+@include('kutty.modules.auth.passwords.reset')
