@@ -20,12 +20,12 @@
 
 <main class="main-content">
 <div
-      class="container w-full p-20 m-4 mx-auto my-16 text-center bg-white border-2 border-gray-300 border-dashed h-96 rounded-xl"
+      class="container w-full p-20 m-4 mx-auto my-16 text-center bg-white border-2 border-gray-300 border-dashed rounded-xl"
     >
-      <p class="mt-20 italic text-gray-500 text-md">
+      {{-- <p class="mt-20 italic text-gray-500 text-md"> --}}
         @yield('content')
         
-      </p>
+      {{-- </p> --}}
     </div>
 </main>
 

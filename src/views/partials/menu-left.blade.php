@@ -1,11 +1,11 @@
 @foreach($items as $menu_item)
     @php ($hasChildren = count($menu_item->children) > 0)
-    <li>
-        <a href="{{ url($menu_item->link()) }}">{{ $menu_item->title }}</a>
+    
+        <a href="{{ url($menu_item->link()) }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ $menu_item->title }}</a>
         @if ($hasChildren)
-            <ul class="menu">
+    
                 @include('kutty.partials.menu-left', ['items' => $menu_item->children])
-            </ul>
+    
         @endif
-    </li>
+    
 @endforeach

@@ -24,6 +24,7 @@
     <link rel="apple-touch-icon-precomposed" href="{{ url('/') }}/images/apple-touch-icon.png" />
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     @php 
      Asset::add('kutty','kutty/css/kutty.css');
      Asset::add('kutty','kutty/js/kutty.js');
