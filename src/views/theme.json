@@ -1,6 +1,7 @@
 {
     "name": "kutty",
+    "package_name": "ahmadsyamim/frontend-kutty-theme",
     "extends": "",
     "asset-path": "kutty",
-    "views-path": "kutty"
+    "views-path": "kutty",
 }
