@@ -25,12 +25,11 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    @php 
-     Asset::add('kutty','kutty/css/kutty.css');
-     Asset::add('kutty','kutty/js/kutty.js');
-     Asset::add('kutty-bundle','kutty/kutty.min.js');
-    @endphp
-    {!! Asset::styles() !!}
+    {{ HTML::style('kutty/css/kutty.css') }}
+    @push('scripts')
+    {{ HTML::script('kutty/js/kutty.js') }}
+    {{ HTML::script('kutty/kutty.min.js') }}
+    @endpush
 
     @if (setting('site.google_analytics_tracking_id'))
     <!-- Google Analytics (gtag.js) -->
